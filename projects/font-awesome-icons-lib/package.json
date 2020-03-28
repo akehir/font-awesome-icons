@@ -1,0 +1,21 @@
+{
+  "name": "@triangular/font-awesome-icons",
+  "version": "1.0.0",
+  "peerDependencies": {
+    "@angular/common": "^9.0.0",
+    "@angular/core": "^9.0.0"
+  },
+  "homepage": "https://font-awesome-icons.akehir.com",
+  "license" : "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/akehir/font-awesome-icons"
+  },
+  "bugs": { "url" : "https://github.com/akehir/font-awesome-icons/issues"
+  , "email" : "raphael@ochsenbe.in"
+  },
+  "author": { "name" : "Raphael Ochsenbein"
+            , "email" : "raphael@ochsenbe.in"
+            , "url" : "https://akehir.com/"
+  }
+}
