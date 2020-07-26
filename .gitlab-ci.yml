@@ -30,6 +30,7 @@ deploy_master:
      - rsync --delete -rlvvzhe ssh $CI_PROJECT_DIR/dist/example-app/ akehir@192.168.7.111:/app/web/projects/font-awesome-icons/master/ # syncronize from build server to local via rsync
      - nvm i
      - echo '//registry.npmjs.org/:_authToken=${NPM_TOKEN}'>~/.npmrc
+     - cat ~/.npmrc
      - cd $CI_PROJECT_DIR/dist/font-awesome-icons
      - npm publish --access public
      - rm -f ~/.npmrc
