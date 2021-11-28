@@ -1,0 +1,14 @@
+{
+    "conversionType": "files",
+    "modelFileName": "font-awesome-icon.model",
+    "srcFiles": [
+      "./lib/fontawesome/svgs/solid/**/*.svg",
+      "./lib/fontawesome/svgs/brands/**/*.svg"
+    ],
+    "outputDirectory": "./projects/font-awesome-icons-lib/src/icons",
+    "interfaceName": "FontAwesomeIcon",
+    "typeName": "fontAwesomeIcon",
+    "prefix": "fontAwesomeIcon",
+    "optimizeForLazyLoading": true,
+    "compileSources": true
+}
