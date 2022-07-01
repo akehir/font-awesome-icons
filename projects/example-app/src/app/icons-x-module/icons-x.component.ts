@@ -2,7 +2,6 @@ import { Component, ViewEncapsulation } from '@angular/core';
 import { FontAwesomeIconsRegistry, } from '@triangular/font-awesome-icons';
 
 import {
-
   fontAwesomeIconXRay,
   fontAwesomeIconXbox,
   fontAwesomeIconXingSquare,
@@ -17,7 +16,6 @@ import {
 })
 export class IconsXComponent {
   icons = [
-
     fontAwesomeIconXRay,
     fontAwesomeIconXbox,
     fontAwesomeIconXingSquare,

@@ -11,9 +11,6 @@ import {
   fontAwesomeIconKhanda,
   fontAwesomeIconKickstarterK,
   fontAwesomeIconKickstarter,
-  fontAwesomeIconKissBeam,
-  fontAwesomeIconKissWinkHeart,
-  fontAwesomeIconKiss,
   fontAwesomeIconKiwiBird,
   fontAwesomeIconKorvue,
 } from '@triangular/font-awesome-icons/icons';
@@ -35,9 +32,6 @@ export class IconsKComponent {
     fontAwesomeIconKhanda,
     fontAwesomeIconKickstarterK,
     fontAwesomeIconKickstarter,
-    fontAwesomeIconKissBeam,
-    fontAwesomeIconKissWinkHeart,
-    fontAwesomeIconKiss,
     fontAwesomeIconKiwiBird,
     fontAwesomeIconKorvue,
   ];

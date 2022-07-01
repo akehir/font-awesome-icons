@@ -3,7 +3,6 @@ import { FontAwesomeIconsRegistry, } from '@triangular/font-awesome-icons';
 
 import {
 
-  fontAwesomeIconWalking,
   fontAwesomeIconWallet,
   fontAwesomeIconWarehouse,
   fontAwesomeIconWater,
@@ -12,7 +11,6 @@ import {
   fontAwesomeIconWeebly,
   fontAwesomeIconWeibo,
   fontAwesomeIconWeightHanging,
-  fontAwesomeIconWeight,
   fontAwesomeIconWeixin,
   fontAwesomeIconWhatsappSquare,
   fontAwesomeIconWhatsapp,
@@ -21,13 +19,12 @@ import {
   fontAwesomeIconWifi,
   fontAwesomeIconWikipediaW,
   fontAwesomeIconWind,
-  fontAwesomeIconWindowClose,
   fontAwesomeIconWindowMaximize,
   fontAwesomeIconWindowMinimize,
   fontAwesomeIconWindowRestore,
   fontAwesomeIconWindows,
   fontAwesomeIconWineBottle,
-  fontAwesomeIconWineGlassAlt,
+  fontAwesomeIconWineGlassEmpty,
   fontAwesomeIconWineGlass,
   fontAwesomeIconWix,
   fontAwesomeIconWizardsOfTheCoast,
@@ -50,8 +47,6 @@ import {
 })
 export class IconsWComponent {
   icons = [
-
-    fontAwesomeIconWalking,
     fontAwesomeIconWallet,
     fontAwesomeIconWarehouse,
     fontAwesomeIconWater,
@@ -60,7 +55,6 @@ export class IconsWComponent {
     fontAwesomeIconWeebly,
     fontAwesomeIconWeibo,
     fontAwesomeIconWeightHanging,
-    fontAwesomeIconWeight,
     fontAwesomeIconWeixin,
     fontAwesomeIconWhatsappSquare,
     fontAwesomeIconWhatsapp,
@@ -69,13 +63,12 @@ export class IconsWComponent {
     fontAwesomeIconWifi,
     fontAwesomeIconWikipediaW,
     fontAwesomeIconWind,
-    fontAwesomeIconWindowClose,
     fontAwesomeIconWindowMaximize,
     fontAwesomeIconWindowMinimize,
     fontAwesomeIconWindowRestore,
     fontAwesomeIconWindows,
     fontAwesomeIconWineBottle,
-    fontAwesomeIconWineGlassAlt,
+    fontAwesomeIconWineGlassEmpty,
     fontAwesomeIconWineGlass,
     fontAwesomeIconWix,
     fontAwesomeIconWizardsOfTheCoast,

@@ -4,14 +4,11 @@ import { FontAwesomeIconsRegistry, } from '@triangular/font-awesome-icons';
 import {
   fontAwesomeIconQq,
   fontAwesomeIconQrcode,
-  fontAwesomeIconQuestionCircle,
   fontAwesomeIconQuestion,
-  fontAwesomeIconQuidditch,
   fontAwesomeIconQuinscape,
   fontAwesomeIconQuora,
   fontAwesomeIconQuoteLeft,
   fontAwesomeIconQuoteRight,
-  fontAwesomeIconQuran,
 } from '@triangular/font-awesome-icons/icons';
 
 @Component({
@@ -24,14 +21,11 @@ export class IconsQComponent {
   icons = [
     fontAwesomeIconQq,
     fontAwesomeIconQrcode,
-    fontAwesomeIconQuestionCircle,
     fontAwesomeIconQuestion,
-    fontAwesomeIconQuidditch,
     fontAwesomeIconQuinscape,
     fontAwesomeIconQuora,
     fontAwesomeIconQuoteLeft,
     fontAwesomeIconQuoteRight,
-    fontAwesomeIconQuran,
   ];
 
   constructor(private registry: FontAwesomeIconsRegistry) {

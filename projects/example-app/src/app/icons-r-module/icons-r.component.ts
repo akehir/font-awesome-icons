@@ -3,10 +3,8 @@ import { FontAwesomeIconsRegistry, } from '@triangular/font-awesome-icons';
 
 import {
   fontAwesomeIconRProject,
-  fontAwesomeIconRadiationAlt,
   fontAwesomeIconRadiation,
   fontAwesomeIconRainbow,
-  fontAwesomeIconRandom,
   fontAwesomeIconRaspberryPi,
   fontAwesomeIconRavelry,
   fontAwesomeIconReact,
@@ -21,10 +19,7 @@ import {
   fontAwesomeIconRedditSquare,
   fontAwesomeIconReddit,
   fontAwesomeIconRedhat,
-  fontAwesomeIconRedoAlt,
-  fontAwesomeIconRedo,
   fontAwesomeIconRegistered,
-  fontAwesomeIconRemoveFormat,
   fontAwesomeIconRenren,
   fontAwesomeIconReplyAll,
   fontAwesomeIconReply,
@@ -43,14 +38,12 @@ import {
   fontAwesomeIconRocketchat,
   fontAwesomeIconRockrms,
   fontAwesomeIconRoute,
-  fontAwesomeIconRssSquare,
   fontAwesomeIconRss,
   fontAwesomeIconRubleSign,
   fontAwesomeIconRulerCombined,
   fontAwesomeIconRulerHorizontal,
   fontAwesomeIconRulerVertical,
   fontAwesomeIconRuler,
-  fontAwesomeIconRunning,
   fontAwesomeIconRupeeSign,
 } from '@triangular/font-awesome-icons/icons';
 
@@ -63,10 +56,8 @@ import {
 export class IconsRComponent {
   icons = [
     fontAwesomeIconRProject,
-    fontAwesomeIconRadiationAlt,
     fontAwesomeIconRadiation,
     fontAwesomeIconRainbow,
-    fontAwesomeIconRandom,
     fontAwesomeIconRaspberryPi,
     fontAwesomeIconRavelry,
     fontAwesomeIconReact,
@@ -81,10 +72,7 @@ export class IconsRComponent {
     fontAwesomeIconRedditSquare,
     fontAwesomeIconReddit,
     fontAwesomeIconRedhat,
-    fontAwesomeIconRedoAlt,
-    fontAwesomeIconRedo,
     fontAwesomeIconRegistered,
-    fontAwesomeIconRemoveFormat,
     fontAwesomeIconRenren,
     fontAwesomeIconReplyAll,
     fontAwesomeIconReply,
@@ -103,14 +91,12 @@ export class IconsRComponent {
     fontAwesomeIconRocketchat,
     fontAwesomeIconRockrms,
     fontAwesomeIconRoute,
-    fontAwesomeIconRssSquare,
     fontAwesomeIconRss,
     fontAwesomeIconRubleSign,
     fontAwesomeIconRulerCombined,
     fontAwesomeIconRulerHorizontal,
     fontAwesomeIconRulerVertical,
     fontAwesomeIconRuler,
-    fontAwesomeIconRunning,
     fontAwesomeIconRupeeSign,
   ];
 
