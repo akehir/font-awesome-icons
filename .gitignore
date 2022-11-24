@@ -47,3 +47,5 @@ Thumbs.db
 # Generated Code
 projects/font-awesome-icons-lib/src/lib/icons/
 projects/font-awesome-icons-lib/src/icons/
+projects/example-app/coverage/
+projects/font-awesome-icons-lib/coverage/
