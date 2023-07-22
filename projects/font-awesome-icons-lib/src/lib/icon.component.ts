@@ -14,7 +14,8 @@ import { DOCUMENT } from '@angular/common';
   selector: 'font-awesome-icon',
   template: `<ng-content></ng-content>`,
   encapsulation: ViewEncapsulation.None,
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: true
 })
 export class FontAwesomeIconComponent {
   private svgIcon: SVGElement;
@@ -35,7 +36,7 @@ export class FontAwesomeIconComponent {
   constructor(
     private element: ElementRef,
     private iconsRegistry: FontAwesomeIconsRegistry,
-    @Optional() @Inject(DOCUMENT) private document: any,
+    @Optional() @Inject(DOCUMENT) private document: Document,
   ) {
   }
 

@@ -3,8 +3,8 @@ import { FontAwesomeIconComponent } from './icon.component';
 import { FontAwesomeIconsRegistry } from './icons.registry';
 
 @NgModule({
-  declarations: [FontAwesomeIconComponent],
-  imports: [],
+  declarations: [],
+  imports: [FontAwesomeIconComponent],
   exports: [FontAwesomeIconComponent]
 })
 export class FontAwesomeIconsModule {

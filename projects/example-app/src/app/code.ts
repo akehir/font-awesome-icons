@@ -35,4 +35,30 @@ export class SomeComponentWithIcons {
   }
 }`;
 
+export const standaloneComponent = `import { Component } from '@angular/core';
+import { FontAwesomeIconComponent, FontAwesomeIconsRegistry } from '@triangular/font-awesome-icons';
+import {
+  fontAwesomeIconAnkh,
+  // add more icons here
+} from '@triangular/font-awesome-icons/icons';
+@Component({
+  selector: 'app-some-component-with-icons',
+  template: '<font-awesome-icon name="ankh"></font-awesome-icon>',
+  styles: 'svg { color: #ccc; fill: currentColor; width: 5rem; height: 5rem; }',
+  standalone: true,
+  imports: [
+    FontAwesomeIconComponent,
+  ]
+})
+export class SomeComponentWithIcons {
+
+  constructor(private registry: FontAwesomeIconsRegistry) {
+    registry.registerIcons([
+      fontAwesomeIconAnkh,
+      // add more icons here
+    ]);
+  }
+}`;
+
+
 export const usage = `<font-awesome-icon name="ankh"></font-awesome-icon>`;

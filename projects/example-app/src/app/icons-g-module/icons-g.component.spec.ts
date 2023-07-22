@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { waitForAsync, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { IconsGComponent } from './icons-g.component';
 import { FontAwesomeIconsModule } from '@triangular/font-awesome-icons';
@@ -7,7 +7,7 @@ describe('IconsGComponent', () => {
   let component: IconsGComponent;
   let fixture: ComponentFixture<IconsGComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ IconsGComponent ],
       imports: [

@@ -1470,9 +1470,6 @@ export class SearchComponent implements OnInit {
     'zhihu',
 ];
 
-  constructor() {
-  }
-
   ngOnInit(): void {
     this.term.valueChanges.pipe(
       throttleTime(64),

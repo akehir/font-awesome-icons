@@ -1,17 +1,10 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { FontAwesomeIconComponent } from './icon.component';
 
 describe('FontAwesomeIconComponent', () => {
   let component: FontAwesomeIconComponent;
   let fixture: ComponentFixture<FontAwesomeIconComponent>;
-
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [ FontAwesomeIconComponent ]
-    })
-      .compileComponents();
-  }));
 
   beforeEach(() => {
     fixture = TestBed.createComponent(FontAwesomeIconComponent);
