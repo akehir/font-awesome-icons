@@ -1,0 +1,24 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: font-awesome-icons-ingress
+  namespace: triangular
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt
+spec:
+  ingressClassName: traefik
+  rules:
+    - host: font-awesome-icons.akehir.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: font-awesome-icons-checker
+                port:
+                  number: 8001
+  tls:
+    - hosts:
+      - font-awesome-icons.akehir.com
+      secretName: font-awesome-icons-akehir-com

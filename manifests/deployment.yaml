@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: font-awesome-icons
+  namespace: triangular
+spec:
+  selector:
+    matchLabels:
+      app: font-awesome-icons
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: font-awesome-icons
+    spec:
+      containers:
+      - name: font-awesome-icons-example-app
+        image: registry.akehir.com:5050/triangular/font-awesome-icons/font-awesome-icons-example-app:master
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8811
+      imagePullSecrets:
+      - name: deploy-triangular
