@@ -15,8 +15,8 @@ module.exports = function (config) {
     client: {
       clearContext: false // leave Jasmine Spec Runner output visible in browser
     },
-    coverageIstanbulReporter: {
-      dir: require('path').join(__dirname, '../../coverage/font-awesome-icons-lib'),
+    coverageReporter: {
+      dir: require('path').join(__dirname, '../../coverage/example-app-standalone'),
       subdir: '.',
       reporters: [
         { type: 'html' },
