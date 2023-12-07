@@ -15,7 +15,7 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: font-awesome-icons-checker
+                name: font-awesome-icons
                 port:
                   number: 8001
   tls:
