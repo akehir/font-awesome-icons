@@ -35,9 +35,8 @@ build:
 
 deploy:
   stage: deploy
-  image: docker:24.0.5
-  services:
-    - docker:24.0.5-dind
+  tags:
+    - metal
   needs: ['build']
   rules:
     - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
