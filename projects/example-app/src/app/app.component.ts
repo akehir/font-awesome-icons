@@ -1,4 +1,4 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import {ChangeDetectionStrategy, Component, ViewEncapsulation} from '@angular/core';
 import {usage, component, ngModule, standaloneComponent} from './code';
 
 
@@ -7,6 +7,7 @@ import {usage, component, ngModule, standaloneComponent} from './code';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
   encapsulation: ViewEncapsulation.Emulated,
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AppComponent {
   title = 'Angular FontAwesome Lazy Loaded Icon Lib';

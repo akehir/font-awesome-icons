@@ -1,4 +1,4 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import {ChangeDetectionStrategy, Component, ViewEncapsulation} from '@angular/core';
 import { FontAwesomeIconsRegistry, } from '@triangular/font-awesome-icons';
 
 import {
@@ -58,6 +58,7 @@ import {
   templateUrl: './icons-g.component.html',
   styleUrls: [],
   encapsulation: ViewEncapsulation.None,
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class IconsGComponent {
   icons = [
