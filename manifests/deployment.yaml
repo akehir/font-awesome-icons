@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: font-awesome-icons-example-app
-        image: registry.akehir.com:443/triangular/font-awesome-icons/font-awesome-icons-example-app:develop-b38e21fb-1717683696 # {"$imagepolicy": "triangular:font-awesome-icons-example-app-image-policy"}
+        image: registry.akehir.com:443/triangular/font-awesome-icons/font-awesome-icons-example-app:develop-5b7781cd-1717764592 # {"$imagepolicy": "triangular:font-awesome-icons-example-app-image-policy"}
         imagePullPolicy: Always
         ports:
         - containerPort: 8811
