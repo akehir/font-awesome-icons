@@ -14,20 +14,20 @@ spec:
         app: font-awesome-icons
     spec:
       containers:
-      - name: font-awesome-icons-example-app
-        image: registry.akehir.com:443/triangular/font-awesome-icons/font-awesome-icons-example-app:develop-5b7781cd-1717764592 # {"$imagepolicy": "triangular:font-awesome-icons-example-app-image-policy"}
-        imagePullPolicy: Always
-        ports:
-        - containerPort: 8811
+        - name: font-awesome-icons-example-app
+          image: registry.akehir.com:443/triangular/font-awesome-icons/font-awesome-icons-example-app:develop-a39f21bf-1733324379 # {"$imagepolicy": "triangular:font-awesome-icons-example-app-image-policy"}
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8811
       imagePullSecrets:
-      - name: deploy-triangular
+        - name: deploy-triangular
       affinity:
         nodeAffinity:
           preferredDuringSchedulingIgnoredDuringExecution:
-          - weight: 1
-            preference:
-              matchExpressions:
-              - key: kubernetes.io/arch
-                operator: In
-                values:
-                - arm64
+            - weight: 1
+              preference:
+                matchExpressions:
+                  - key: kubernetes.io/arch
+                    operator: In
+                    values:
+                      - arm64

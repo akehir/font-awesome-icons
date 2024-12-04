@@ -71,12 +71,14 @@ import {
   fontAwesomeIconFutbol,
 } from '@triangular/font-awesome-icons/icons';
 
+// eslint-disable-next-line @angular-eslint/prefer-standalone
 @Component({
   selector: 'app-icons-f',
   templateUrl: './icons-f.component.html',
   styleUrls: [],
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: false
 })
 export class IconsFComponent {
   icons = [

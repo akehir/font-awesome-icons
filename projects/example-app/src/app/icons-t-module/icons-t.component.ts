@@ -60,12 +60,14 @@ import {
   fontAwesomeIconTypo3,
 } from '@triangular/font-awesome-icons/icons';
 
+// eslint-disable-next-line @angular-eslint/prefer-standalone
 @Component({
   selector: 'app-icons-t',
   templateUrl: './icons-t.component.html',
   styleUrls: [],
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: false
 })
 export class IconsTComponent {
   icons = [

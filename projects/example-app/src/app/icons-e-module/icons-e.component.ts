@@ -31,12 +31,14 @@ import {
   fontAwesomeIconEye,
 } from '@triangular/font-awesome-icons/icons';
 
+// eslint-disable-next-line @angular-eslint/prefer-standalone
 @Component({
   selector: 'app-icons-e',
   templateUrl: './icons-e.component.html',
   styleUrls: [],
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: false
 })
 export class IconsEComponent {
   icons = [

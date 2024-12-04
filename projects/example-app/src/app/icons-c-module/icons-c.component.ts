@@ -143,12 +143,14 @@ import {
   fontAwesomeIconCuttlefish,
 } from '@triangular/font-awesome-icons/icons';
 
+// eslint-disable-next-line @angular-eslint/prefer-standalone
 @Component({
   selector: 'app-icons-c',
   templateUrl: './icons-c.component.html',
   styleUrls: [],
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: false
 })
 export class IconsCComponent {
   icons = [
