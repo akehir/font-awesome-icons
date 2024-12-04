@@ -1,3 +1,4 @@
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -14,20 +15,21 @@ spec:
         app: font-awesome-icons
     spec:
       containers:
-      - name: font-awesome-icons-example-app
-        image: registry.akehir.com:443/triangular/font-awesome-icons/font-awesome-icons-example-app:develop-5f1636b6-1727801599 # {"$imagepolicy": "triangular:font-awesome-icons-example-app-image-policy"}
-        imagePullPolicy: Always
-        ports:
-        - containerPort: 8811
+        - name: font-awesome-icons-example-app
+          image: registry.akehir.com:443/triangular/font-awesome-icons/font-awesome-icons-example-app:develop-5f1636b6-1727801599 # {"$imagepolicy": "triangular:font-awesome-icons-example-app-image-policy"}
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8811
       imagePullSecrets:
-      - name: deploy-triangular
+        - name: deploy-triangular
       affinity:
         nodeAffinity:
           preferredDuringSchedulingIgnoredDuringExecution:
-          - weight: 1
-            preference:
-              matchExpressions:
-              - key: kubernetes.io/arch
-                operator: In
-                values:
-                - arm64
+            - weight: 1
+              preference:
+                matchExpressions:
+                  - key: kubernetes.io/arch
+                    operator: In
+                    values:
+                      - arm64
+---

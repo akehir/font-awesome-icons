@@ -57,16 +57,15 @@ import {
 import {NgForOf} from "@angular/common";
 
 @Component({
-  selector: 'app-icons-a',
-  templateUrl: './icons-a.component.html',
-  styleUrls: [],
-  encapsulation: ViewEncapsulation.None,
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [
-    NgForOf,
-    FontAwesomeIconComponent
-  ],
-  standalone: true
+    selector: 'app-icons-a',
+    templateUrl: './icons-a.component.html',
+    styleUrls: [],
+    encapsulation: ViewEncapsulation.None,
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    imports: [
+        NgForOf,
+        FontAwesomeIconComponent
+    ]
 })
 export class IconsAComponent {
   icons = [
