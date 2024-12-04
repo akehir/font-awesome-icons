@@ -1,4 +1,3 @@
----
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -16,7 +15,7 @@ spec:
     spec:
       containers:
         - name: font-awesome-icons-example-app
-          image: registry.akehir.com:443/triangular/font-awesome-icons/font-awesome-icons-example-app:develop-5f1636b6-1727801599 # {"$imagepolicy": "triangular:font-awesome-icons-example-app-image-policy"}
+          image: registry.akehir.com:443/triangular/font-awesome-icons/font-awesome-icons-example-app:develop-a39f21bf-1733324379 # {"$imagepolicy": "triangular:font-awesome-icons-example-app-image-policy"}
           imagePullPolicy: Always
           ports:
             - containerPort: 8811
@@ -32,4 +31,3 @@ spec:
                     operator: In
                     values:
                       - arm64
----
