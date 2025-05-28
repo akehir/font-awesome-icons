@@ -56,14 +56,13 @@ import {
   fontAwesomeIconMusic,
 } from '@triangular/font-awesome-icons/icons';
 
-// eslint-disable-next-line @angular-eslint/prefer-standalone
 @Component({
   selector: 'app-icons-m',
   templateUrl: './icons-m.component.html',
   styleUrls: [],
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: false
+  standalone: false // eslint-disable-line @angular-eslint/prefer-standalone
 })
 export class IconsMComponent {
   icons = [

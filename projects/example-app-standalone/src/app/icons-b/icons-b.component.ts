@@ -75,7 +75,7 @@ import {
   fontAwesomeIconBuyNLarge,
   fontAwesomeIconBuysellads,
 } from '@triangular/font-awesome-icons/icons';
-import {NgForOf} from "@angular/common";
+
 
 @Component({
     selector: 'app-icons-b',
@@ -84,9 +84,8 @@ import {NgForOf} from "@angular/common";
     encapsulation: ViewEncapsulation.None,
     changeDetection: ChangeDetectionStrategy.OnPush,
     imports: [
-        FontAwesomeIconComponent,
-        NgForOf
-    ]
+    FontAwesomeIconComponent
+]
 })
 export class IconsBComponent {
   icons = [
