@@ -59,14 +59,13 @@ import {
   fontAwesomeIconDyalog,
 } from '@triangular/font-awesome-icons/icons';
 
-// eslint-disable-next-line @angular-eslint/prefer-standalone
 @Component({
   selector: 'app-icons-d',
   templateUrl: './icons-d.component.html',
   styleUrls: [],
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: false
+  standalone: false // eslint-disable-line @angular-eslint/prefer-standalone
 })
 export class IconsDComponent {
   icons = [

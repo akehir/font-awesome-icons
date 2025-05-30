@@ -54,7 +54,7 @@ import {
   fontAwesomeIconAward,
   fontAwesomeIconAws,
 } from '@triangular/font-awesome-icons/icons';
-import {NgForOf} from "@angular/common";
+
 
 @Component({
     selector: 'app-icons-a',
@@ -63,9 +63,8 @@ import {NgForOf} from "@angular/common";
     encapsulation: ViewEncapsulation.None,
     changeDetection: ChangeDetectionStrategy.OnPush,
     imports: [
-        NgForOf,
-        FontAwesomeIconComponent
-    ]
+    FontAwesomeIconComponent
+]
 })
 export class IconsAComponent {
   icons = [

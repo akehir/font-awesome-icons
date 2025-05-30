@@ -70,14 +70,13 @@ import {
   fontAwesomeIconPython,
 } from '@triangular/font-awesome-icons/icons';
 
-// eslint-disable-next-line @angular-eslint/prefer-standalone
 @Component({
   selector: 'app-icons-p',
   templateUrl: './icons-p.component.html',
   styleUrls: [],
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: false
+  standalone: false // eslint-disable-line @angular-eslint/prefer-standalone
 })
 export class IconsPComponent {
   icons = [
