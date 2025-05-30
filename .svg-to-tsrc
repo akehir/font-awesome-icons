@@ -10,5 +10,5 @@
     "typeName": "fontAwesomeIcon",
     "prefix": "fontAwesomeIcon",
     "optimizeForLazyLoading": true,
-    "compileSources": false
+    "compileSources": true
 }
