@@ -1,4 +1,4 @@
-import {ChangeDetectionStrategy, Component, ViewEncapsulation} from '@angular/core';
+import { ChangeDetectionStrategy, Component, ViewEncapsulation, inject } from '@angular/core';
 import {FontAwesomeIconComponent, FontAwesomeIconsRegistry,} from '@triangular/font-awesome-icons';
 
 import {
@@ -88,6 +88,8 @@ import {
 ]
 })
 export class IconsBComponent {
+  private registry = inject(FontAwesomeIconsRegistry);
+
   icons = [
     fontAwesomeIconBabyCarriage,
     fontAwesomeIconBaby,
@@ -163,7 +165,9 @@ export class IconsBComponent {
     fontAwesomeIconBuysellads,
   ];
 
-  constructor(private registry: FontAwesomeIconsRegistry) {
+  constructor() {
+    const registry = this.registry;
+
     registry.registerIcons(this.icons);
   }
 

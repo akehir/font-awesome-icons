@@ -1,13 +1,4 @@
-import {
-  ChangeDetectionStrategy,
-  Component,
-  ElementRef,
-  Inject,
-  Input,
-  Optional,
-  ViewEncapsulation,
-  DOCUMENT
-} from '@angular/core';
+import { ChangeDetectionStrategy, Component, ElementRef, Input, ViewEncapsulation, DOCUMENT, inject } from '@angular/core';
 import { FontAwesomeIconsRegistry } from './icons.registry';
 
 
@@ -19,6 +10,10 @@ import { FontAwesomeIconsRegistry } from './icons.registry';
   standalone: true
 })
 export class FontAwesomeIconComponent {
+  private element = inject(ElementRef);
+  private iconsRegistry = inject(FontAwesomeIconsRegistry);
+  private document = inject<Document>(DOCUMENT, { optional: true });
+
   private svgIcon: SVGElement;
 
   @Input()
@@ -32,13 +27,6 @@ export class FontAwesomeIconComponent {
       this.svgIcon = this.svgElementFromString(svgData);
       this.element.nativeElement.appendChild(this.svgIcon);
     }
-  }
-
-  constructor(
-    private element: ElementRef,
-    private iconsRegistry: FontAwesomeIconsRegistry,
-    @Optional() @Inject(DOCUMENT) private document: Document,
-  ) {
   }
 
   private svgElementFromString(svgContent: string): SVGElement {
