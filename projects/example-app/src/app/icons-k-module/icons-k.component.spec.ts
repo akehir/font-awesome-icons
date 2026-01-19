@@ -1,4 +1,4 @@
-import { waitForAsync, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { IconsKComponent } from './icons-k.component';
 import { FontAwesomeIconsModule } from '@triangular/font-awesome-icons';
@@ -7,15 +7,15 @@ describe('IconsKComponent', () => {
   let component: IconsKComponent;
   let fixture: ComponentFixture<IconsKComponent>;
 
-  beforeEach(waitForAsync(() => {
+  beforeEach(() =>
     TestBed.configureTestingModule({
       declarations: [ IconsKComponent ],
       imports: [
         FontAwesomeIconsModule,
       ]
     })
-    .compileComponents();
-  }));
+    .compileComponents()
+  );
 
   beforeEach(() => {
     fixture = TestBed.createComponent(IconsKComponent);
