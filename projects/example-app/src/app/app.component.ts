@@ -1,4 +1,4 @@
-import {ChangeDetectionStrategy, Component, ViewEncapsulation} from '@angular/core';
+import {Component, ViewEncapsulation} from '@angular/core';
 import {usage, component, ngModule, standaloneComponent} from './code';
 
 @Component({
@@ -6,7 +6,6 @@ import {usage, component, ngModule, standaloneComponent} from './code';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
   encapsulation: ViewEncapsulation.Emulated,
-  changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: false // eslint-disable-line @angular-eslint/prefer-standalone
 })
 export class AppComponent {
