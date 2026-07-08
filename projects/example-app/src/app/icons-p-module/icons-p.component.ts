@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, ViewEncapsulation, inject } from '@angular/core';
+import { Component, ViewEncapsulation, inject } from '@angular/core';
 import { FontAwesomeIconsRegistry, } from '@triangular/font-awesome-icons';
 
 import {
@@ -75,7 +75,6 @@ import {
   templateUrl: './icons-p.component.html',
   styleUrls: [],
   encapsulation: ViewEncapsulation.None,
-  changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: false // eslint-disable-line @angular-eslint/prefer-standalone
 })
 export class IconsPComponent {

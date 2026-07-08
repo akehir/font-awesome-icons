@@ -1,12 +1,11 @@
-import { ChangeDetectionStrategy, Component, ElementRef, Input, ViewEncapsulation, DOCUMENT, inject } from '@angular/core';
+import { Component, ElementRef, Input, ViewEncapsulation, DOCUMENT, inject } from '@angular/core';
 import { FontAwesomeIconsRegistry } from './icons.registry';
 
 
 @Component({
-  selector: 'font-awesome-icon',
+  selector: 'font-awesome-icon', // eslint-disable-line @angular-eslint/component-selector
   template: `<ng-content></ng-content>`,
   encapsulation: ViewEncapsulation.None,
-  changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: true
 })
 export class FontAwesomeIconComponent {
@@ -14,7 +13,7 @@ export class FontAwesomeIconComponent {
   private iconsRegistry = inject(FontAwesomeIconsRegistry);
   private document = inject<Document>(DOCUMENT, { optional: true });
 
-  private svgIcon: SVGElement;
+  private svgIcon?: SVGElement;
 
   @Input()
   set name(iconName: string) {
@@ -29,11 +28,11 @@ export class FontAwesomeIconComponent {
     }
   }
 
-  private svgElementFromString(svgContent: string): SVGElement {
-    const div = this.document.createElement('DIV');
+  private svgElementFromString(svgContent: string): SVGElement | undefined {
+    const div = this.document?.createElement('DIV');
     if (div instanceof HTMLElement) {
       div.innerHTML = svgContent;
-      return div.querySelector('svg') || this.document.createElementNS('http://www.w3.org/2000/svg', 'path');
+      return div.querySelector('svg') || this.document?.createElementNS('http://www.w3.org/2000/svg', 'path');
     }
   }
 }

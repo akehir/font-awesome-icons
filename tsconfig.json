@@ -1,7 +1,6 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "esModuleInterop": true,
     "sourceMap": true,
@@ -16,10 +15,10 @@
     ],
     "paths": {
       "@triangular/font-awesome-icons": [
-        "dist/font-awesome-icons"
+        "./dist/font-awesome-icons"
       ],
       "@triangular/font-awesome-icons/*": [
-        "dist/font-awesome-icons/*"
+        "./dist/font-awesome-icons/*"
       ]
     },
     "useDefineForClassFields": false

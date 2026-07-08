@@ -1,4 +1,4 @@
-import {ChangeDetectionStrategy, Component, OnInit, ViewEncapsulation} from '@angular/core';
+import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 import { UntypedFormControl } from '@angular/forms';
 import { filter, map, throttleTime } from 'rxjs/operators';
 
@@ -24,12 +24,11 @@ import { filter, map, throttleTime } from 'rxjs/operators';
   `,
   styleUrls: [],
   encapsulation: ViewEncapsulation.None,
-  changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: false // eslint-disable-line @angular-eslint/prefer-standalone
 })
 export class SearchComponent implements OnInit {
   term = new UntypedFormControl('');
-  results = [];
+  results: string[] = [];
   icons = [
     'ad',
     'address_book',

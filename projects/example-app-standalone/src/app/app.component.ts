@@ -1,4 +1,4 @@
-import {ChangeDetectionStrategy, Component, ViewEncapsulation} from '@angular/core';
+import {Component, ViewEncapsulation} from '@angular/core';
 
 import {RouterLink, RouterLinkActive, RouterOutlet} from "@angular/router";
 
@@ -8,7 +8,6 @@ import {RouterLink, RouterLinkActive, RouterOutlet} from "@angular/router";
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.css'],
     encapsulation: ViewEncapsulation.None,
-    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AppComponent {
   title = 'example-app-standalone';
