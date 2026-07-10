@@ -1,5 +1,5 @@
 import { Component, ViewEncapsulation, inject } from '@angular/core';
-import { FontAwesomeIconsRegistry, } from '@triangular/font-awesome-icons';
+import { FontAwesomeIconsRegistry } from '@triangular/font-awesome-icons';
 
 import {
   fontAwesomeIconGalacticRepublic,
@@ -58,7 +58,7 @@ import {
   templateUrl: './icons-g.component.html',
   styleUrls: [],
   encapsulation: ViewEncapsulation.None,
-  standalone: false // eslint-disable-line @angular-eslint/prefer-standalone
+  standalone: false, // eslint-disable-line @angular-eslint/prefer-standalone
 })
 export class IconsGComponent {
   private registry = inject(FontAwesomeIconsRegistry);
@@ -120,5 +120,4 @@ export class IconsGComponent {
 
     registry.registerIcons(this.icons);
   }
-
 }

@@ -5,15 +5,13 @@ import { FontAwesomeIconsRegistry } from './icons.registry';
 @NgModule({
   declarations: [],
   imports: [FontAwesomeIconComponent],
-  exports: [FontAwesomeIconComponent]
+  exports: [FontAwesomeIconComponent],
 })
 export class FontAwesomeIconsModule {
   static forRoot(): ModuleWithProviders<FontAwesomeIconsModule> {
     return {
       ngModule: FontAwesomeIconsModule,
-      providers: [
-        FontAwesomeIconsRegistry,
-      ],
+      providers: [FontAwesomeIconsRegistry],
     };
   }
 }

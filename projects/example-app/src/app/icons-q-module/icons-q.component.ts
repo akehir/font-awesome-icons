@@ -1,5 +1,5 @@
 import { Component, ViewEncapsulation, inject } from '@angular/core';
-import { FontAwesomeIconsRegistry, } from '@triangular/font-awesome-icons';
+import { FontAwesomeIconsRegistry } from '@triangular/font-awesome-icons';
 
 import {
   fontAwesomeIconQq,
@@ -16,7 +16,7 @@ import {
   templateUrl: './icons-q.component.html',
   styleUrls: [],
   encapsulation: ViewEncapsulation.None,
-  standalone: false // eslint-disable-line @angular-eslint/prefer-standalone
+  standalone: false, // eslint-disable-line @angular-eslint/prefer-standalone
 })
 export class IconsQComponent {
   private registry = inject(FontAwesomeIconsRegistry);
@@ -36,5 +36,4 @@ export class IconsQComponent {
 
     registry.registerIcons(this.icons);
   }
-
 }

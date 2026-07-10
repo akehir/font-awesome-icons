@@ -1,30 +1,36 @@
-import {Component, OnInit, ViewEncapsulation} from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { UntypedFormControl } from '@angular/forms';
 import { filter, map, throttleTime } from 'rxjs/operators';
 
 @Component({
   selector: 'app-search',
   template: `
-  <div class="search">
-    <div class="search__query">
-      <label class="search__label" for="search">Search</label>
-      <input class="search__field"
-        type="text"
-        id="search"
-        [formControl]="term"
-        placeholder="Search"
-        autocomplete="off">
+    <div class="search">
+      <div class="search__query">
+        <label class="search__label" for="search">Search</label>
+        <input
+          class="search__field"
+          type="text"
+          id="search"
+          [formControl]="term"
+          placeholder="Search"
+          autocomplete="off" />
+      </div>
+      <div class="search__answer">
+        @for (result of results; track result) {
+          <a
+            [routerLink]="result.slice(0, 1)"
+            [fragment]="result"
+            (click)="clear()"
+            >{{ result }}</a
+          >
+        }
+      </div>
     </div>
-    <div class="search__answer">
-      @for (result of results; track result) {
-        <a [routerLink]="result.slice(0,1)" [fragment]="result" (click)="clear()">{{result}}</a>
-      }
-    </div>
-  </div>
   `,
   styleUrls: [],
   encapsulation: ViewEncapsulation.None,
-  standalone: false // eslint-disable-line @angular-eslint/prefer-standalone
+  standalone: false, // eslint-disable-line @angular-eslint/prefer-standalone
 })
 export class SearchComponent implements OnInit {
   term = new UntypedFormControl('');
@@ -1469,17 +1475,18 @@ export class SearchComponent implements OnInit {
     'youtube_square',
     'youtube',
     'zhihu',
-];
+  ];
 
   ngOnInit(): void {
-    this.term.valueChanges.pipe(
-      throttleTime(64),
-      filter((term) => term && term.length > 0),
-      map((term) => this.icons.filter((element) => element.indexOf(term) !== -1)),
-    ).subscribe((results) => {
-      this.results = results;
-      }
-    );
+    this.term.valueChanges
+      .pipe(
+        throttleTime(64),
+        filter(term => term && term.length > 0),
+        map(term => this.icons.filter(element => element.indexOf(term) !== -1))
+      )
+      .subscribe(results => {
+        this.results = results;
+      });
   }
 
   clear() {

@@ -10,16 +10,10 @@
     "experimentalDecorators": true,
     "importHelpers": true,
     "target": "ES2022",
-    "typeRoots": [
-      "node_modules/@types"
-    ],
+    "typeRoots": ["node_modules/@types"],
     "paths": {
-      "@triangular/font-awesome-icons": [
-        "./dist/font-awesome-icons"
-      ],
-      "@triangular/font-awesome-icons/*": [
-        "./dist/font-awesome-icons/*"
-      ]
+      "@triangular/font-awesome-icons": ["./dist/font-awesome-icons"],
+      "@triangular/font-awesome-icons/*": ["./dist/font-awesome-icons/*"]
     },
     "useDefineForClassFields": false
   }

@@ -1,5 +1,8 @@
 import { Component, ViewEncapsulation, inject } from '@angular/core';
-import {FontAwesomeIconComponent, FontAwesomeIconsRegistry,} from '@triangular/font-awesome-icons';
+import {
+  FontAwesomeIconComponent,
+  FontAwesomeIconsRegistry,
+} from '@triangular/font-awesome-icons';
 
 import {
   fontAwesomeIcon500Px,
@@ -55,15 +58,12 @@ import {
   fontAwesomeIconAws,
 } from '@triangular/font-awesome-icons/icons';
 
-
 @Component({
-    selector: 'app-icons-a',
-    templateUrl: './icons-a.component.html',
-    styleUrls: [],
-    encapsulation: ViewEncapsulation.None,
-    imports: [
-    FontAwesomeIconComponent
-]
+  selector: 'app-icons-a',
+  templateUrl: './icons-a.component.html',
+  styleUrls: [],
+  encapsulation: ViewEncapsulation.None,
+  imports: [FontAwesomeIconComponent],
 })
 export class IconsAComponent {
   private registry = inject(FontAwesomeIconsRegistry);
@@ -127,5 +127,4 @@ export class IconsAComponent {
 
     registry.registerIcons(this.icons);
   }
-
 }

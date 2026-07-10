@@ -4,9 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { IconsXComponent } from './icons-x.component';
 import { FontAwesomeIconsModule } from '@triangular/font-awesome-icons';
 
-const routes: Routes = [
-  { path: '', component: IconsXComponent }
-];
+const routes: Routes = [{ path: '', component: IconsXComponent }];
 
 @NgModule({
   declarations: [IconsXComponent],
@@ -14,6 +12,6 @@ const routes: Routes = [
     CommonModule,
     RouterModule.forChild(routes),
     FontAwesomeIconsModule,
-  ]
+  ],
 })
-export class IconsDModule { }
+export class IconsDModule {}

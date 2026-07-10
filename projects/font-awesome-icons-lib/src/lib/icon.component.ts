@@ -1,12 +1,18 @@
-import { Component, ElementRef, Input, ViewEncapsulation, DOCUMENT, inject } from '@angular/core';
+import {
+  Component,
+  ElementRef,
+  Input,
+  ViewEncapsulation,
+  DOCUMENT,
+  inject,
+} from '@angular/core';
 import { FontAwesomeIconsRegistry } from './icons.registry';
-
 
 @Component({
   selector: 'font-awesome-icon', // eslint-disable-line @angular-eslint/component-selector
   template: `<ng-content></ng-content>`,
   encapsulation: ViewEncapsulation.None,
-  standalone: true
+  standalone: true,
 })
 export class FontAwesomeIconComponent {
   private element = inject(ElementRef);
@@ -32,7 +38,10 @@ export class FontAwesomeIconComponent {
     const div = this.document?.createElement('DIV');
     if (div instanceof HTMLElement) {
       div.innerHTML = svgContent;
-      return div.querySelector('svg') || this.document?.createElementNS('http://www.w3.org/2000/svg', 'path');
+      return (
+        div.querySelector('svg') ||
+        this.document?.createElementNS('http://www.w3.org/2000/svg', 'path')
+      );
     }
   }
 }

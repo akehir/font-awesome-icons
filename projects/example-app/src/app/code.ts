@@ -60,5 +60,4 @@ export class SomeComponentWithIcons {
   }
 }`;
 
-
 export const usage = `<font-awesome-icon name="ankh"></font-awesome-icon>`;

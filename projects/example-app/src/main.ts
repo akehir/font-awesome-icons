@@ -8,5 +8,8 @@ if (environment.production) {
   enableProdMode();
 }
 
-platformBrowser().bootstrapModule(AppModule, { applicationProviders: [provideZonelessChangeDetection()], })
+platformBrowser()
+  .bootstrapModule(AppModule, {
+    applicationProviders: [provideZonelessChangeDetection()],
+  })
   .catch(err => console.error(err));

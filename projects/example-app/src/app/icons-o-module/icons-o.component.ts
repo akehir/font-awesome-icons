@@ -1,5 +1,5 @@
 import { Component, ViewEncapsulation, inject } from '@angular/core';
-import { FontAwesomeIconsRegistry, } from '@triangular/font-awesome-icons';
+import { FontAwesomeIconsRegistry } from '@triangular/font-awesome-icons';
 
 import {
   fontAwesomeIconObjectGroup,
@@ -24,7 +24,7 @@ import {
   templateUrl: './icons-o.component.html',
   styleUrls: [],
   encapsulation: ViewEncapsulation.None,
-  standalone: false // eslint-disable-line @angular-eslint/prefer-standalone
+  standalone: false, // eslint-disable-line @angular-eslint/prefer-standalone
 })
 export class IconsOComponent {
   private registry = inject(FontAwesomeIconsRegistry);
@@ -52,5 +52,4 @@ export class IconsOComponent {
 
     registry.registerIcons(this.icons);
   }
-
 }
