@@ -2,10 +2,16 @@
   "extends": "../../tsconfig.json",
   "compilerOptions": {
     "outDir": "../../out-tsc/spec",
-    "types": ["jasmine", "node"]
+    "types": ["jest", "node"],
+    "module": "commonjs",
+    "paths": {
+      "@triangular/font-awesome-icons": [
+        "../font-awesome-icons-lib/src/public_api"
+      ],
+      "@triangular/font-awesome-icons/*": ["../font-awesome-icons-lib/src/*"]
+    }
   },
-  "files": ["src/test.ts"],
-  "include": ["**/*.spec.ts", "**/*.d.ts"],
+  "include": ["src/**/*.spec.ts", "src/**/*.d.ts"],
   "angularCompilerOptions": {
     "compilationMode": "partial",
     "extendedDiagnostics": {
